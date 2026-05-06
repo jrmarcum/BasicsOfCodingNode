@@ -85,11 +85,13 @@ Thumbs.db
 - **Runtime:** Bun only. No Node.js, npm, or ts-node required.
   - JavaScript: `bun filename.js`
   - TypeScript: `bun filename.ts` (Bun runs TypeScript natively; no tsconfig needed)
-- **Module system:** CommonJS (`require`) in both `.js` and `.ts` files.
-  No `import`/`export` unless unavoidable.
+- **Module system:** ESM (`import`/`export`) in both `.js` and `.ts` files.
+  Use `import x from 'node:x'` for default imports and `import { fn } from 'node:x'`
+  for named imports. Always use the `node:` prefix for built-in modules.
+  Never use `require()`.
 - **No root package.json or tsconfig.json** — Bun runs TypeScript natively
   with no external toolchain. Do not create these files.
-- **Bun is a drop-in Node.js replacement** — all CommonJS `require()` calls,
+- **Bun is a drop-in Node.js replacement** — all ESM `import` statements,
   `process.*` globals, `fs`/`path`/`crypto`/`readline` modules, and all lesson
   logic work unchanged from the Node.js implementation.
 - **TypeScript conventions used:**
@@ -99,7 +101,7 @@ Thumbs.db
   - `Array<() => void>` for typed function arrays (lesson 43)
   - `unknown` for truly-unknown-type parameters (lesson 07 `whatAmI`)
   - `implements InterfaceName` on classes (lesson 20)
-  - `require('xml2js') as any` for the untyped xml2js package (lesson 49)
+  - `import xml2js from 'xml2js'` for the untyped xml2js package (lesson 49)
 - **No external packages** except lesson 49 (xml), which requires
   `bun install xml2js` run inside `49_xml/`.
 - **JavaScript has no pointers** (lesson 17) — implement with object references;

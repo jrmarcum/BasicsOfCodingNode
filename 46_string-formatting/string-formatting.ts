@@ -1,4 +1,4 @@
-const { inspect } = require("util");
+import { inspect } from 'node:util';
 
 interface Point {
     x: number;

@@ -1,4 +1,4 @@
-const { inspect } = require("util");
+import { inspect } from 'node:util';
 
 const p = { x: 1, y: 2 };
 

@@ -1,8 +1,8 @@
-const crypto = require("crypto");
+import { createHash } from 'node:crypto';
 
 const s = "sha1 this string";
 
-const h = crypto.createHash("sha1");
+const h = createHash("sha1");
 h.update(s);
 const bs = h.digest("hex");
 

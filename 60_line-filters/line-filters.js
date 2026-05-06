@@ -1,6 +1,6 @@
-const readline = require("readline");
+import { createInterface } from 'node:readline';
 
-const rl = readline.createInterface({
+const rl = createInterface({
     input: process.stdin,
     terminal: false,
 });

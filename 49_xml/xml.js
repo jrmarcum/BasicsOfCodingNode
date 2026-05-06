@@ -1,4 +1,4 @@
-const xml2js = require("xml2js");
+import xml2js from 'xml2js';
 
 function buildPlantXml(plant, indent = " ", innerIndent = "  ") {
     const origins = plant.origin.map(o => `${indent}${innerIndent}<origin>${o}</origin>`).join("\n");

@@ -1,16 +1,16 @@
-const fs = require("fs");
-const os = require("os");
-const path = require("path");
-const crypto = require("crypto");
+import fs from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { randomBytes } from 'node:crypto';
 
 function createTempFile(prefix) {
-    const name = path.join(os.tmpdir(), prefix + crypto.randomBytes(6).toString("hex"));
+    const name = path.join(tmpdir(), prefix + randomBytes(6).toString("hex"));
     fs.writeFileSync(name, "");
     return name;
 }
 
 function createTempDir(prefix) {
-    const name = path.join(os.tmpdir(), prefix + crypto.randomBytes(6).toString("hex"));
+    const name = path.join(tmpdir(), prefix + randomBytes(6).toString("hex"));
     fs.mkdirSync(name);
     return name;
 }
