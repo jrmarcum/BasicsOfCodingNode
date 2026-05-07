@@ -1,8 +1,8 @@
-﻿##### Run Command:
+##### Run Command:
 
-`$ bun sorting-by-functions.js`
+`$ node sorting-by-functions.js`
 
-`$ bun sorting-by-functions.ts`
+`$ npx tsx sorting-by-functions.ts`
 
 ##### Results:
 

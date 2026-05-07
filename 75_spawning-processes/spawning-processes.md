@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun spawning-processes.js`
+`$ node spawning-processes.js`
 
-`$ bun spawning-processes.ts`
+`$ npx tsx spawning-processes.ts`
 
 ##### Results:
 

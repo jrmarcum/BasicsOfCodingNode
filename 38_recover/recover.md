@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun recover.js`
+`$ node recover.js`
 
-`$ bun recover.ts`
+`$ npx tsx recover.ts`
 
 ##### Results:
 

@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun goroutines.js`
+`$ node goroutines.js`
 
-`$ bun goroutines.ts`
+`$ npx tsx goroutines.ts`
 
 ##### Results:
 

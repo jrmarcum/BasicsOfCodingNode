@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun tcp-server.js`
+`$ node tcp-server.js`
 
-`$ bun tcp-server.ts`
+`$ npx tsx tcp-server.ts`
 
 ##### Results:
 

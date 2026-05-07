@@ -1,14 +1,19 @@
-# Basics of Coding Bun
+# Basics of Coding Node
 ## Preface
-What this text is and what it is not: This text is intended to introduce the reader to the basics of the JavaScript programming language (running on Bun) in the sense that they will be able to write minimal types of programs and run the code. It is not intended to go into advanced topics like asynchronous programming, frameworks, bundlers, or advanced software engineering principles.
+What this text is and what it is not: This text is intended to introduce the reader to the basics of the JavaScript programming language (running on Node.js) in the sense that they will be able to write minimal types of programs and run the code. It is not intended to go into advanced topics like asynchronous programming, frameworks, bundlers, or advanced software engineering principles.
 
 The programs are intended to be run in the terminal as that is common to most operating systems. Linux and Mac come preinstalled with a terminal. Windows may or may not have it pre-installed. "Windows Terminal" can be installed from the Microsoft store. Just do a search for it and install it.
-## Installation and Setup of Bun
-To set up Bun, navigate to the [Bun](https://bun.sh/) website and follow the installation instructions for your operating system. If the runtime has been installed properly you will be able to type the following command in the terminal command line and receive the response shown:
+## Installation and Setup of Node.js
+To set up Node.js, navigate to the [Node.js](https://nodejs.org/) website and follow the installation instructions for your operating system. If the runtime has been installed properly you will be able to type the following command in the terminal command line and receive the response shown:
 ```
-$ bun --version
-1.x.x
+$ node --version
+v22.x.x
 (Note: the version shown here varies with your installed version)
+```
+
+After installing Node.js, run the following once at the project root to install the TypeScript toolchain:
+```
+$ npm install
 ```
 ## How to Run Examples
 
@@ -16,20 +21,20 @@ Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) s
 
 ### JavaScript
 
-No setup required. Navigate into the lesson folder and run with `bun`:
+After `npm install`, navigate into the lesson folder and run with `node`:
 
 ```
 $ cd 01_hello-world
-$ bun hello-world.js
+$ node hello-world.js
 ```
 
 ### TypeScript
 
-Bun runs TypeScript natively — no toolchain setup needed. Navigate into the lesson folder and run with `bun`:
+`tsx` runs TypeScript natively — no compile step needed. Navigate into the lesson folder and run with `npx tsx`:
 
 ```
 $ cd 01_hello-world
-$ bun hello-world.ts
+$ npx tsx hello-world.ts
 ```
 
 Both produce identical output.

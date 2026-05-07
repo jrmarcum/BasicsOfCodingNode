@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun tickers.js`
+`$ node tickers.js`
 
-`$ bun tickers.ts`
+`$ npx tsx tickers.ts`
 
 ##### Results:
 

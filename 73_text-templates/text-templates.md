@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun text-templates.js`
+`$ node text-templates.js`
 
-`$ bun text-templates.ts`
+`$ npx tsx text-templates.ts`
 
 ##### Results:
 

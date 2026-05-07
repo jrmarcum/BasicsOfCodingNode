@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun timers.js`
+`$ node timers.js`
 
-`$ bun timers.ts`
+`$ npx tsx timers.ts`
 
 ##### Results:
 

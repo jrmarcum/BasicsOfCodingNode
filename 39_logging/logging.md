@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun logging.js`
+`$ node logging.js`
 
-`$ bun logging.ts`
+`$ npx tsx logging.ts`
 
 ##### Results:
 

@@ -1,10 +1,10 @@
 # Temporary files created by lesson examples (lessons 58-60)
 tmp/
 
-# Bun lockfile
-bun.lockb
+# TypeScript compiled output (use npx tsx to run .ts files directly)
+dist/
 
-# Node.js/Bun modules
+# Node.js toolchain artifacts
 node_modules/
 
 # Environment files

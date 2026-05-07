@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun generics.js`
+`$ node generics.js`
 
-`$ bun generics.ts`
+`$ npx tsx generics.ts`
 
 ##### Results:
 

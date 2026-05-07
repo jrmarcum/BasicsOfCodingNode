@@ -2,7 +2,7 @@
 ___
 ##### Run Command:
 
-`$ printf "hello\nfilter\n" | bun line-filters.js`
+`$ printf "hello\nfilter\n" | node line-filters.js`
 
 ##### Results:
 

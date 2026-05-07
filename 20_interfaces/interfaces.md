@@ -1,10 +1,10 @@
-﻿#### JavaScript has no explicit interface type. This lesson demonstrates duck typing — any object with `area()`, `perim()`, and `toString()` methods satisfies the geometry "interface" implicitly. The `measure()` function works with any object that has those methods, regardless of its type.
+#### JavaScript has no explicit interface type. This lesson demonstrates duck typing — any object with `area()`, `perim()`, and `toString()` methods satisfies the geometry "interface" implicitly. The `measure()` function works with any object that has those methods, regardless of its type.
 ___
 ##### Run Command:
 
-`$ bun interfaces.js`
+`$ node interfaces.js`
 
-`$ bun interfaces.ts`
+`$ npx tsx interfaces.ts`
 
 ##### Results:
 

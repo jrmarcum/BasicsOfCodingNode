@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun rate-limiting.js`
+`$ node rate-limiting.js`
 
-`$ bun rate-limiting.ts`
+`$ npx tsx rate-limiting.ts`
 
 ##### Results:
 

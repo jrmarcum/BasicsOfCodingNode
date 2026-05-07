@@ -1,9 +1,9 @@
-# Basics of Coding Bun — Project Context
+# Basics of Coding Node — Project Context
 
 ## Purpose
 
 Multi-language comparative study of programming syntax, language simplicity,
-lines of code required, and runtime performance. Bun is one of several
+lines of code required, and runtime performance. Node.js is one of several
 languages implemented against the same set of example programs, enabling
 direct side-by-side comparison.
 
@@ -33,16 +33,18 @@ source of truth for program logic and expected output.
 ## Project Structure
 
 ```
-BasicsOfCodingBun/
+BasicsOfCodingNode/
 ├── CLAUDE.md          — this file; canonical project context for Claude sessions
 ├── LICENSE            — CC0 (applies to Jon Marcum's original contributions)
 ├── NOTICE             — attribution notice for CC BY 3.0 derived content
 ├── README.md          — project overview, attribution section, license table
+├── package.json       — type: module; devDependencies: tsx, typescript, @types/node
+├── tsconfig.json      — TypeScript compiler config (ESNext module, bundler resolution)
 ├── upstream/
 │   └── basicsofcodinggo/  — git submodule: BasicsOfCodingGo reference
 └── ##_topic-name/
-    ├── topic-name.js  — JavaScript source (run with bun)
-    ├── topic-name.ts  — TypeScript source (run with bun)
+    ├── topic-name.js  — JavaScript source (run with node)
+    ├── topic-name.ts  — TypeScript source (run with npx tsx)
     └── topic-name.md  — lesson explanation (run commands + expected output)
 ```
 
@@ -57,10 +59,10 @@ The project `.gitignore` covers:
 # Temporary files created by lesson examples (lessons 58-60)
 tmp/
 
-# Bun lockfile
-bun.lockb
+# TypeScript compiled output (use npx tsx to run .ts files directly)
+dist/
 
-# Node.js/Bun modules
+# Node.js toolchain artifacts
 node_modules/
 
 # Environment files
@@ -72,28 +74,29 @@ node_modules/
 Thumbs.db
 ```
 
-- `bun.lockb` is Bun's binary lockfile, created when `bun install` is run.
+- `dist/` is the TypeScript compiler output directory; use `npx tsx` to run
+  `.ts` files directly without compiling.
 - `tmp/` is the working directory expected by lessons 58 (reading-files),
   59 (writing-files), and 60 (line-filters). It must exist at runtime but
   should not be committed. Lesson 59 creates it automatically.
-- `node_modules/` is created by `bun install xml2js` in lesson 49 (xml).
-  There is no root-level `bun install` step — Bun runs TypeScript natively
-  with no setup required.
+- `node_modules/` is created by `npm install` for lesson 49 (xml) and the
+  root devDependencies. Run `npm install` once at the project root.
 
 ## Language Notes for Future Claude Sessions
 
-- **Runtime:** Bun only. No Node.js, npm, or ts-node required.
-  - JavaScript: `bun filename.js`
-  - TypeScript: `bun filename.ts` (Bun runs TypeScript natively; no tsconfig needed)
+- **Runtime:** Node.js. Run `npm install` once at project root to install devDependencies.
+  - JavaScript: `node filename.js`
+  - TypeScript: `npx tsx filename.ts` (tsx runs TypeScript natively via esbuild; no compile step)
 - **Module system:** ESM (`import`/`export`) in both `.js` and `.ts` files.
   Use `import x from 'node:x'` for default imports and `import { fn } from 'node:x'`
   for named imports. Always use the `node:` prefix for built-in modules.
-  Never use `require()`.
-- **No root package.json or tsconfig.json** — Bun runs TypeScript natively
-  with no external toolchain. Do not create these files.
-- **Bun is a drop-in Node.js replacement** — all ESM `import` statements,
-  `process.*` globals, `fs`/`path`/`crypto`/`readline` modules, and all lesson
-  logic work unchanged from the Node.js implementation.
+  Never use `require()`. ESM works in `.js` because `package.json` has `"type": "module"`.
+- **Toolchain:** `package.json` (root) + `tsconfig.json` required.
+  devDependencies: `tsx`, `typescript`, `@types/node`. Run `npm install` once.
+- **Node.js with ESM** — all `import` statements, `process.*` globals,
+  `fs`/`path`/`crypto`/`readline` modules, and all lesson logic are standard
+  Node.js. `tsx` is used for TypeScript; it is a drop-in replacement for `node`
+  that handles TypeScript natively.
 - **TypeScript conventions used:**
   - Function parameter and return types always explicit
   - `interface` for object shapes (structs, result objects)
@@ -102,8 +105,8 @@ Thumbs.db
   - `unknown` for truly-unknown-type parameters (lesson 07 `whatAmI`)
   - `implements InterfaceName` on classes (lesson 20)
   - `import xml2js from 'xml2js'` for the untyped xml2js package (lesson 49)
-- **No external packages** except lesson 49 (xml), which requires
-  `bun install xml2js` run inside `49_xml/`.
+- **External packages:** lesson 49 (xml) requires `npm install xml2js` run inside
+  `49_xml/`. All other lessons use only Node.js built-ins.
 - **JavaScript has no pointers** (lesson 17) — implement with object references;
   note the difference from Go's pointer semantics.
 - **JavaScript has no defer** (lesson 43) — simulated with a `deferred` array
@@ -112,8 +115,8 @@ Thumbs.db
 - **JavaScript has no explicit interfaces** (lesson 20) — implement with duck typing.
 - **JavaScript has no structs** (lesson 18) — implement with classes or plain objects.
 - **Go's `fmt.Println` vs `console.log`:** Go uses space-separated `%v` format for
-  structs/arrays (e.g., `[1 2 3]`, `map[k:v]`). Bun/JS uses its own inspection
-  format (e.g., `[ 1, 2, 3 ]`, `{ k: 'v' }`). Always show actual Bun output
+  structs/arrays (e.g., `[1 2 3]`, `map[k:v]`). Node.js uses its own inspection
+  format (e.g., `[ 1, 2, 3 ]`, `{ k: 'v' }`). Always show actual Node.js output
   in the `.md` file.
 - **Map iteration order:** Go maps are non-deterministic. JavaScript plain objects
   and `Map` preserve insertion order. No variability note needed for JS maps.
@@ -121,7 +124,7 @@ Thumbs.db
   42 (panic — stack trace), 50 (time), 51 (epoch), 52 (time-formatting-parsing),
   53 (random-numbers), 63 (temporary-files-and-directories),
   67 (environment-variables).
-- **Lessons with setup steps:** 49 (xml — `bun install xml2js`),
+- **Lessons with setup steps:** 49 (xml — `npm install xml2js` inside `49_xml/`),
   58 (reading-files — run 59 first), 60 (line-filters — requires stdin piping).
 - The root `LICENSE` file is CC0 but does **not** cover the derived content.
   Always refer to NOTICE and README for the full picture.
@@ -135,9 +138,9 @@ Each lesson `.md` follows the Go/V reference format:
 ___
 ##### Run Command:
 
-`$ bun filename.js`
+`$ node filename.js`
 
-`$ bun filename.ts`
+`$ npx tsx filename.ts`
 
 ##### Results:
 

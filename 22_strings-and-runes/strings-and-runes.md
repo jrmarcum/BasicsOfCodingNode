@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun strings-and-runes.js`
+`$ node strings-and-runes.js`
 
-`$ bun strings-and-runes.ts`
+`$ npx tsx strings-and-runes.ts`
 
 ##### Results:
 

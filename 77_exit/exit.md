@@ -2,7 +2,7 @@
 ___
 ##### Run Command:
 
-`$ bun exit.js`
+`$ node exit.js`
 
 `$ echo $LASTEXITCODE`
 

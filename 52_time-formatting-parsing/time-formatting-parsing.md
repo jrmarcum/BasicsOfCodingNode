@@ -1,10 +1,10 @@
-﻿#### Time-dependent lines will vary with each run. JavaScript does not have a reference-time layout string like Go's `Mon Jan 2 15:04:05 MST 2006`; formatting is done manually using Date getter methods and template literals. The `Intl.DateTimeFormat` API is another option for locale-aware formatting.
+#### Time-dependent lines will vary with each run. JavaScript does not have a reference-time layout string like Go's `Mon Jan 2 15:04:05 MST 2006`; formatting is done manually using Date getter methods and template literals. The `Intl.DateTimeFormat` API is another option for locale-aware formatting.
 ___
 ##### Run Command:
 
-`$ bun time-formatting-parsing.js`
+`$ node time-formatting-parsing.js`
 
-`$ bun time-formatting-parsing.ts`
+`$ npx tsx time-formatting-parsing.ts`
 
 ##### Results:
 

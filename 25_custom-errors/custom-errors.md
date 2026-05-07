@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun custom-errors.js`
+`$ node custom-errors.js`
 
-`$ bun custom-errors.ts`
+`$ npx tsx custom-errors.ts`
 
 ##### Results:
 

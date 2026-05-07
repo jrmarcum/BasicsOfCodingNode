@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun context.js`
+`$ node context.js`
 
-`$ bun context.ts`
+`$ npx tsx context.ts`
 
 ##### Results:
 

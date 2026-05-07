@@ -1,8 +1,8 @@
-﻿##### Run Command:
+##### Run Command:
 
-`$ bun functions.js`
+`$ node functions.js`
 
-`$ bun functions.ts`
+`$ npx tsx functions.ts`
 
 ##### Results:
 

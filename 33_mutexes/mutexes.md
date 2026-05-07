@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun mutexes.js`
+`$ node mutexes.js`
 
-`$ bun mutexes.ts`
+`$ npx tsx mutexes.ts`
 
 ##### Results:
 

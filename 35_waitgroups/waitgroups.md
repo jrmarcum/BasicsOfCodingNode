@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun waitgroups.js`
+`$ node waitgroups.js`
 
-`$ bun waitgroups.ts`
+`$ npx tsx waitgroups.ts`
 
 ##### Results:
 

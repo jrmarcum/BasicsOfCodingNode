@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun atomic-counters.js`
+`$ node atomic-counters.js`
 
-`$ bun atomic-counters.ts`
+`$ npx tsx atomic-counters.ts`
 
 ##### Results:
 

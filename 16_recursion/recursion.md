@@ -1,8 +1,8 @@
-﻿##### Run Command:
+##### Run Command:
 
-`$ bun recursion.js`
+`$ node recursion.js`
 
-`$ bun recursion.ts`
+`$ npx tsx recursion.ts`
 
 ##### Results:
 

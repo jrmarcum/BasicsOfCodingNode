@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun signals.js`
+`$ node signals.js`
 
-`$ bun signals.ts`
+`$ npx tsx signals.ts`
 
 ##### Results:
 

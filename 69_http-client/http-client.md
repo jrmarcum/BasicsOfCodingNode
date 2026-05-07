@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun http-client.js`
+`$ node http-client.js`
 
-`$ bun http-client.ts`
+`$ npx tsx http-client.ts`
 
 ##### Results:
 

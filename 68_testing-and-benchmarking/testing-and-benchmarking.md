@@ -1,14 +1,26 @@
-#### Go's `testing` package maps to Bun's native `bun:test` runner; `test()` replaces `func TestX(t *testing.T)`, `describe()` groups subtests, and `expect().toBe()` replaces `t.Errorf`.
+#### Go's `testing` package maps to Node.js's built-in `node:test` runner; `test()` replaces `func TestX(t *testing.T)`, `describe()` groups subtests, and `assert.strictEqual()` replaces `t.Errorf`. Timing values in the output vary.
 ___
 ##### Run Command:
 
-`$ bun test ./testing-and-benchmarking.js`
+`$ node --test testing-and-benchmarking.js`
 
-`$ bun test ./testing-and-benchmarking.ts`
+`$ npx tsx --test testing-and-benchmarking.ts`
 
 ##### Results:
 
-` 6 pass`
-` 0 fail`
-` 6 expect() calls`
-`Ran 6 tests across 1 file. [48.00ms]`
+`✔ IntMinBasic (0.77ms)`
+`▶ IntMinTableDriven`
+`  ✔ 0,1 (0.26ms)`
+`  ✔ 1,0 (0.08ms)`
+`  ✔ 2,-2 (0.91ms)`
+`  ✔ 0,-1 (0.09ms)`
+`  ✔ -1,0 (0.08ms)`
+`✔ IntMinTableDriven (1.81ms)`
+`ℹ tests 6`
+`ℹ suites 1`
+`ℹ pass 6`
+`ℹ fail 0`
+`ℹ cancelled 0`
+`ℹ skipped 0`
+`ℹ todo 0`
+`ℹ duration_ms 112.52`

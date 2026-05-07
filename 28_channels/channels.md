@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun channels.js`
+`$ node channels.js`
 
-`$ bun channels.ts`
+`$ npx tsx channels.ts`
 
 ##### Results:
 

@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun struct-embedding.js`
+`$ node struct-embedding.js`
 
-`$ bun struct-embedding.ts`
+`$ npx tsx struct-embedding.ts`
 
 ##### Results:
 

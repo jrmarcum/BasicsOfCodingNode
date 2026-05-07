@@ -1,10 +1,10 @@
-﻿#### Temp file and directory names will vary with each run due to the random hex suffix. On Linux/macOS the paths will be under `/tmp/`. Node.js does not have a built-in `os.CreateTemp` equivalent, so this lesson generates random filenames using `crypto.randomBytes` combined with `os.tmpdir()`. The files and directories are removed immediately after use via `try/finally`.
+#### Temp file and directory names will vary with each run due to the random hex suffix. On Linux/macOS the paths will be under `/tmp/`. Node.js does not have a built-in `os.CreateTemp` equivalent, so this lesson generates random filenames using `crypto.randomBytes` combined with `os.tmpdir()`. The files and directories are removed immediately after use via `try/finally`.
 ___
 ##### Run Command:
 
-`$ bun temporary-files-and-directories.js`
+`$ node temporary-files-and-directories.js`
 
-`$ bun temporary-files-and-directories.ts`
+`$ npx tsx temporary-files-and-directories.ts`
 
 ##### Results:
 

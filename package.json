@@ -1,0 +1,11 @@
+{
+  "name": "basics-of-coding-node",
+  "version": "1.0.0",
+  "description": "JavaScript and TypeScript examples for multi-language comparative study",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

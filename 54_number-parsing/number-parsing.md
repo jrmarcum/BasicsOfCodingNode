@@ -1,10 +1,10 @@
-﻿#### JavaScript uses `parseFloat`, `parseInt`, and `Number` for parsing. Parse failures return `NaN` rather than an error object. The error message format is kept identical to Go's for comparison. JavaScript prints `null` where Go prints `<nil>` for the absence of an error.
+#### JavaScript uses `parseFloat`, `parseInt`, and `Number` for parsing. Parse failures return `NaN` rather than an error object. The error message format is kept identical to Go's for comparison. JavaScript prints `null` where Go prints `<nil>` for the absence of an error.
 ___
 ##### Run Command:
 
-`$ bun number-parsing.js`
+`$ node number-parsing.js`
 
-`$ bun number-parsing.ts`
+`$ npx tsx number-parsing.ts`
 
 ##### Results:
 

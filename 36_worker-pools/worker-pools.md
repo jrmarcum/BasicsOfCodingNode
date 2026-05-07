@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun worker-pools.js`
+`$ node worker-pools.js`
 
-`$ bun worker-pools.ts`
+`$ npx tsx worker-pools.ts`
 
 ##### Results:
 

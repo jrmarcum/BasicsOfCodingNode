@@ -1,8 +1,8 @@
-﻿##### Run Command:
+##### Run Command:
 
-`$ bun if-else.js`
+`$ node if-else.js`
 
-`$ bun if-else.ts`
+`$ npx tsx if-else.ts`
 
 ##### Results:
 

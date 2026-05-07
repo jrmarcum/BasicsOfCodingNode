@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun select.js`
+`$ node select.js`
 
-`$ bun select.ts`
+`$ npx tsx select.ts`
 
 ##### Results:
 

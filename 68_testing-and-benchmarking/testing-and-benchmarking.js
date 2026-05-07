@@ -1,11 +1,12 @@
-import { test, describe, expect } from 'bun:test';
+import { test, describe } from 'node:test';
+import assert from 'node:assert/strict';
 
 function intMin(a, b) {
     return a < b ? a : b;
 }
 
 test('IntMinBasic', () => {
-    expect(intMin(2, -2)).toBe(-2);
+    assert.strictEqual(intMin(2, -2), -2);
 });
 
 describe('IntMinTableDriven', () => {
@@ -19,7 +20,7 @@ describe('IntMinTableDriven', () => {
 
     for (const tt of tests) {
         test(`${tt.a},${tt.b}`, () => {
-            expect(intMin(tt.a, tt.b)).toBe(tt.want);
+            assert.strictEqual(intMin(tt.a, tt.b), tt.want);
         });
     }
 });

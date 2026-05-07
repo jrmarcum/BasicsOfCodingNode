@@ -1,10 +1,10 @@
-﻿#### JavaScript has no pointers. Primitive values (numbers, strings, booleans) are always passed by value. Objects are passed by reference. This lesson demonstrates the equivalent concept: `zeroval` receives a copy of the number (no effect on the original), while `zeroref` receives an object reference and mutates it, mirroring Go's pointer receiver behavior. There are no memory addresses to print.
+#### JavaScript has no pointers. Primitive values (numbers, strings, booleans) are always passed by value. Objects are passed by reference. This lesson demonstrates the equivalent concept: `zeroval` receives a copy of the number (no effect on the original), while `zeroref` receives an object reference and mutates it, mirroring Go's pointer receiver behavior. There are no memory addresses to print.
 ___
 ##### Run Command:
 
-`$ bun pointers.js`
+`$ node pointers.js`
 
-`$ bun pointers.ts`
+`$ npx tsx pointers.ts`
 
 ##### Results:
 

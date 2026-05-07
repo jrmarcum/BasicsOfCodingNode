@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun enums.js`
+`$ node enums.js`
 
-`$ bun enums.ts`
+`$ npx tsx enums.ts`
 
 ##### Results:
 

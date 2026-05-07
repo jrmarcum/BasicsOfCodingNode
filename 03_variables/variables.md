@@ -1,8 +1,8 @@
-﻿##### Run Command:
+##### Run Command:
 
-`$ bun variables.js`
+`$ node variables.js`
 
-`$ bun variables.ts`
+`$ npx tsx variables.ts`
 
 ##### Results:
 

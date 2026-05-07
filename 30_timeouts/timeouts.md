@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun timeouts.js`
+`$ node timeouts.js`
 
-`$ bun timeouts.ts`
+`$ npx tsx timeouts.ts`
 
 ##### Results:
 

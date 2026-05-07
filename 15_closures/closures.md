@@ -1,8 +1,8 @@
-﻿##### Run Command:
+##### Run Command:
 
-`$ bun closures.js`
+`$ node closures.js`
 
-`$ bun closures.ts`
+`$ npx tsx closures.ts`
 
 ##### Results:
 

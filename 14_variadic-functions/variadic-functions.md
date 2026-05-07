@@ -1,8 +1,8 @@
-﻿##### Run Command:
+##### Run Command:
 
-`$ bun variadic-functions.js`
+`$ node variadic-functions.js`
 
-`$ bun variadic-functions.ts`
+`$ npx tsx variadic-functions.ts`
 
 ##### Results:
 

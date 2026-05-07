@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun sha256-hashes.js`
+`$ node sha256-hashes.js`
 
-`$ bun sha256-hashes.ts`
+`$ npx tsx sha256-hashes.ts`
 
 ##### Results:
 

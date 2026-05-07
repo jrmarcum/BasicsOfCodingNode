@@ -2,9 +2,9 @@
 ___
 ##### Run Command:
 
-`$ bun execing-processes.js`
+`$ node execing-processes.js`
 
-`$ bun execing-processes.ts`
+`$ npx tsx execing-processes.ts`
 
 ##### Results:
 
