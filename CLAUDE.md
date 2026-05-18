@@ -26,9 +26,16 @@ NOTICE — do **not** add a per-file attribution footer to lesson `.md` files.
 
 ## Upstream Reference
 
-BasicsOfCodingGo is included as a git submodule at `upstream/basicsofcodinggo`.
-Read each lesson from `upstream/basicsofcodinggo/##_topic-name/` as the
-source of truth for program logic and expected output.
+BasicsOfCodingGo is included as a git submodule at `upstream/basicsofcodinggo`
+(<https://github.com/jrmarcum/BasicsOfCodingGo>). Read each lesson from
+`upstream/basicsofcodinggo/##_topic-name/` as the source of truth for
+program logic and expected output.
+
+After cloning, initialize the submodule with:
+
+```
+git submodule update --init --recursive
+```
 
 ## Project Structure
 

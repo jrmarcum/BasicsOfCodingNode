@@ -1,20 +1,27 @@
 # Basics of Coding Node
+
 ## Preface
+
 What this text is and what it is not: This text is intended to introduce the reader to the basics of the JavaScript programming language (running on Node.js) in the sense that they will be able to write minimal types of programs and run the code. It is not intended to go into advanced topics like asynchronous programming, frameworks, bundlers, or advanced software engineering principles.
 
 The programs are intended to be run in the terminal as that is common to most operating systems. Linux and Mac come preinstalled with a terminal. Windows may or may not have it pre-installed. "Windows Terminal" can be installed from the Microsoft store. Just do a search for it and install it.
+
 ## Installation and Setup of Node.js
+
 To set up Node.js, navigate to the [Node.js](https://nodejs.org/) website and follow the installation instructions for your operating system. If the runtime has been installed properly you will be able to type the following command in the terminal command line and receive the response shown:
-```
-$ node --version
+
+```text
+node --version
 v22.x.x
 (Note: the version shown here varies with your installed version)
 ```
 
 After installing Node.js, run the following once at the project root to install the TypeScript toolchain:
+
+```sh
+npm install
 ```
-$ npm install
-```
+
 ## How to Run Examples
 
 Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) source file, plus a `.md` file showing run commands and expected output.
@@ -23,104 +30,118 @@ Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) s
 
 After `npm install`, navigate into the lesson folder and run with `node`:
 
-```
-$ cd 01_hello-world
-$ node hello-world.js
+```sh
+cd 01_hello-world
+node hello-world.js
 ```
 
 ### TypeScript
 
-`tsx` runs TypeScript natively — no compile step needed. Navigate into the lesson folder and run with `npx tsx`:
+`tsx` runs TypeScript natively â€” no compile step needed. Navigate into the lesson folder and run with `npx tsx`:
 
-```
-$ cd 01_hello-world
-$ npx tsx hello-world.ts
+```sh
+cd 01_hello-world
+npx tsx hello-world.ts
 ```
 
 Both produce identical output.
 
 ## Lessons
 
-| # | Topic |
-|---|-------|
-| 01 | hello-world |
-| 02 | values |
-| 03 | variables |
-| 04 | constants |
-| 05 | for |
-| 06 | if-else |
-| 07 | switch |
-| 08 | arrays |
-| 09 | slices |
-| 10 | maps |
-| 11 | range |
-| 12 | functions |
-| 13 | multiple-return-values |
-| 14 | variadic-functions |
-| 15 | closures |
-| 16 | recursion |
-| 17 | pointers |
-| 18 | structs |
-| 19 | methods |
-| 20 | interfaces |
-| 21 | errors |
-| 22 | strings-and-runes |
-| 23 | struct-embedding |
-| 24 | enums |
-| 25 | custom-errors |
-| 26 | generics |
-| 27 | goroutines |
-| 28 | channels |
-| 29 | select |
-| 30 | timeouts |
-| 31 | timers |
-| 32 | tickers |
-| 33 | mutexes |
-| 34 | atomic-counters |
-| 35 | waitgroups |
-| 36 | worker-pools |
-| 37 | rate-limiting |
-| 38 | recover |
-| 39 | logging |
-| 40 | sorting |
-| 41 | sorting-by-functions |
-| 42 | panic |
-| 43 | defer |
-| 44 | collection-functions |
-| 45 | string-functions |
-| 46 | string-formatting |
-| 47 | regular-expressions |
-| 48 | json |
-| 49 | xml |
-| 50 | time |
-| 51 | epoch |
-| 52 | time-formatting-parsing |
-| 53 | random-numbers |
-| 54 | number-parsing |
-| 55 | url-parsing |
-| 56 | sha1-hashes |
-| 57 | base64-encoding |
-| 58 | reading-files |
-| 59 | writing-files |
-| 60 | line-filters |
-| 61 | file-paths |
-| 62 | directories |
+| #  | Topic                           |
+| -- | ------------------------------- |
+| 01 | hello-world                     |
+| 02 | values                          |
+| 03 | variables                       |
+| 04 | constants                       |
+| 05 | for                             |
+| 06 | if-else                         |
+| 07 | switch                          |
+| 08 | arrays                          |
+| 09 | slices                          |
+| 10 | maps                            |
+| 11 | range                           |
+| 12 | functions                       |
+| 13 | multiple-return-values          |
+| 14 | variadic-functions              |
+| 15 | closures                        |
+| 16 | recursion                       |
+| 17 | pointers                        |
+| 18 | structs                         |
+| 19 | methods                         |
+| 20 | interfaces                      |
+| 21 | errors                          |
+| 22 | strings-and-runes               |
+| 23 | struct-embedding                |
+| 24 | enums                           |
+| 25 | custom-errors                   |
+| 26 | generics                        |
+| 27 | goroutines                      |
+| 28 | channels                        |
+| 29 | select                          |
+| 30 | timeouts                        |
+| 31 | timers                          |
+| 32 | tickers                         |
+| 33 | mutexes                         |
+| 34 | atomic-counters                 |
+| 35 | waitgroups                      |
+| 36 | worker-pools                    |
+| 37 | rate-limiting                   |
+| 38 | recover                         |
+| 39 | logging                         |
+| 40 | sorting                         |
+| 41 | sorting-by-functions            |
+| 42 | panic                           |
+| 43 | defer                           |
+| 44 | collection-functions            |
+| 45 | string-functions                |
+| 46 | string-formatting               |
+| 47 | regular-expressions             |
+| 48 | json                            |
+| 49 | xml                             |
+| 50 | time                            |
+| 51 | epoch                           |
+| 52 | time-formatting-parsing         |
+| 53 | random-numbers                  |
+| 54 | number-parsing                  |
+| 55 | url-parsing                     |
+| 56 | sha1-hashes                     |
+| 57 | base64-encoding                 |
+| 58 | reading-files                   |
+| 59 | writing-files                   |
+| 60 | line-filters                    |
+| 61 | file-paths                      |
+| 62 | directories                     |
 | 63 | temporary-files-and-directories |
-| 64 | command-line-arguments |
-| 65 | command-line-flags |
-| 66 | command-line-subcommands |
-| 67 | environment-variables |
-| 68 | testing-and-benchmarking |
-| 69 | http-client |
-| 70 | http-server |
-| 71 | context |
-| 72 | tcp-server |
-| 73 | text-templates |
-| 74 | execing-processes |
-| 75 | spawning-processes |
-| 76 | signals |
-| 77 | exit |
-| 78 | sha256-hashes |
+| 64 | command-line-arguments          |
+| 65 | command-line-flags              |
+| 66 | command-line-subcommands        |
+| 67 | environment-variables           |
+| 68 | testing-and-benchmarking        |
+| 69 | http-client                     |
+| 70 | http-server                     |
+| 71 | context                         |
+| 72 | tcp-server                      |
+| 73 | text-templates                  |
+| 74 | execing-processes               |
+| 75 | spawning-processes              |
+| 76 | signals                         |
+| 77 | exit                            |
+| 78 | sha256-hashes                   |
+
+## Upstream Reference
+
+The Go source of truth for all lesson logic is tracked as a git submodule:
+
+```text
+upstream/basicsofcodinggo/  â†’  https://github.com/jrmarcum/BasicsOfCodingGo
+```
+
+After cloning, initialize it with:
+
+```sh
+git submodule update --init --recursive
+```
 
 ## Attribution
 
@@ -141,8 +162,8 @@ This repository contains two tiers of content:
 
 | Content | License |
 | --- | --- |
-| Lesson files and code examples adapted from *Basics of Coding Go* / *Go by Example* | [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) — see NOTICE |
-| Original contributions by Jon Marcum (project structure, README, comparative study additions) | [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — see LICENSE |
+| Lesson files and code examples adapted from *Basics of Coding Go* / *Go by Example* | [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) â€” see NOTICE |
+| Original contributions by Jon Marcum (project structure, README, comparative study additions) | [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) â€” see LICENSE |
 
 The root `LICENSE` file (CC0) applies to Jon Marcum's original contributions.
 The `NOTICE` file clarifies that CC BY 3.0 governs all content adapted from *Go by Example* and *Basics of Coding Go*.
