@@ -1,10 +1,9 @@
-#### Go's `sync.WaitGroup` maps to `Promise.all()`; worker async functions are started in a loop and awaited together, producing the same start-then-done pattern.
+﻿#### Go's `sync.WaitGroup` maps to `Promise.all()`; worker async functions are started in a loop and awaited together, producing the same start-then-done pattern.
 ___
 ##### Run Command:
 
 `$ node waitgroups.js`
 
-`$ npx tsx waitgroups.ts`
 
 ##### Results:
 

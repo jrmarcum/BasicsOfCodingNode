@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node if-else.js`
 
-`$ npx tsx if-else.ts`
 
 ##### Results:
 

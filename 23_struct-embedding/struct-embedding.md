@@ -1,10 +1,9 @@
-#### Go struct embedding is simulated in JavaScript with object composition — a `Container` class holds a `Base` instance and promotes its fields and methods via a getter and delegation.
+﻿#### Go struct embedding is simulated in JavaScript with object composition — a `Container` class holds a `Base` instance and promotes its fields and methods via a getter and delegation.
 ___
 ##### Run Command:
 
 `$ node struct-embedding.js`
 
-`$ npx tsx struct-embedding.ts`
 
 ##### Results:
 

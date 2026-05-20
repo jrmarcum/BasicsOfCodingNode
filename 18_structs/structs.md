@@ -1,10 +1,9 @@
-#### JavaScript has no built-in struct type. This lesson uses plain objects (created via factory functions) as the equivalent. The `&` prefix used in Go to indicate pointer-to-struct (e.g., `&{Ann 40}`) does not exist in JavaScript — all object variables are effectively references.
+﻿#### JavaScript has no built-in struct type. This lesson uses plain objects (created via factory functions) as the equivalent. The `&` prefix used in Go to indicate pointer-to-struct (e.g., `&{Ann 40}`) does not exist in JavaScript — all object variables are effectively references.
 ___
 ##### Run Command:
 
 `$ node structs.js`
 
-`$ npx tsx structs.ts`
 
 ##### Results:
 

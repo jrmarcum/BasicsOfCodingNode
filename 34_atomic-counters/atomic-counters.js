@@ -1,4 +1,4 @@
-(async () => {
+﻿(async () => {
     let ops = 0;
 
     const workers = [];

@@ -1,4 +1,5 @@
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+﻿const sleep = (ms) =>
+    new Promise(resolve => setTimeout(resolve, ms));
 
 function withTimeout(promise, ms, label) {
     const timeout = new Promise((_, reject) =>

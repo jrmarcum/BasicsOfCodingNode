@@ -1,4 +1,4 @@
-class ArgError extends Error {
+﻿class ArgError extends Error {
     constructor(arg, msg) {
         super(`${arg} - ${msg}`);
         this.arg = arg;

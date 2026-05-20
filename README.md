@@ -16,35 +16,24 @@ v22.x.x
 (Note: the version shown here varies with your installed version)
 ```
 
-After installing Node.js, run the following once at the project root to install the TypeScript toolchain:
+After installing Node.js, run the following once at the project root:
 
 ```sh
 npm install
 ```
 
+This installs `xml2js` (used by lesson 49).
+
 ## How to Run Examples
 
-Each lesson folder contains both a `.js` (JavaScript) and a `.ts` (TypeScript) source file, plus a `.md` file showing run commands and expected output.
-
-### JavaScript
-
-After `npm install`, navigate into the lesson folder and run with `node`:
+Each lesson folder contains a `.js` source file and a `.md` file showing the run command and expected output. Navigate into the lesson folder and run with `node`:
 
 ```sh
 cd 01_hello-world
 node hello-world.js
 ```
 
-### TypeScript
-
-`tsx` runs TypeScript natively â€” no compile step needed. Navigate into the lesson folder and run with `npx tsx`:
-
-```sh
-cd 01_hello-world
-npx tsx hello-world.ts
-```
-
-Both produce identical output.
+All lessons are JavaScript-only.
 
 ## Lessons
 

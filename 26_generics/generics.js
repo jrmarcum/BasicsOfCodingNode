@@ -1,4 +1,4 @@
-function slicesIndex(s, v) {
+﻿function slicesIndex(s, v) {
     for (let i = 0; i < s.length; i++) {
         if (s[i] === v) return i;
     }

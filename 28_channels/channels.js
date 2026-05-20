@@ -1,4 +1,4 @@
-(async () => {
+﻿(async () => {
     let resolveMessage;
     const messages = new Promise(resolve => {
         resolveMessage = resolve;

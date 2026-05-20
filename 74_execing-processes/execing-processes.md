@@ -1,10 +1,9 @@
-#### JavaScript has no `syscall.Exec` equivalent to replace the current process; this lesson uses `child_process.execFileSync` to run an external command synchronously and inherit its output.
+﻿#### JavaScript has no `syscall.Exec` equivalent to replace the current process; this lesson uses `child_process.execFileSync` to run an external command synchronously and inherit its output.
 ___
 ##### Run Command:
 
 `$ node execing-processes.js`
 
-`$ npx tsx execing-processes.ts`
 
 ##### Results:
 

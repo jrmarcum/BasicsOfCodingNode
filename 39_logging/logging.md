@@ -1,10 +1,9 @@
-#### Go's `log` and `log/slog` packages map to a custom logger factory using `process.stderr`/`process.stdout` for output targets and `JSON.stringify` for structured logging; timestamps vary with each run.
+﻿#### Go's `log` and `log/slog` packages map to a custom logger factory using `process.stderr`/`process.stdout` for output targets and `JSON.stringify` for structured logging; timestamps vary with each run.
 ___
 ##### Run Command:
 
 `$ node logging.js`
 
-`$ npx tsx logging.ts`
 
 ##### Results:
 

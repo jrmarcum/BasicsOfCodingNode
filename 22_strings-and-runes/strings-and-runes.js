@@ -1,4 +1,4 @@
-const s = "สวัสดี";
+﻿const s = "สวัสดี";
 
 const buf = Buffer.from(s);
 console.log("Len:", buf.length);

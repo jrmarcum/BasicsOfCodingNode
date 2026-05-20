@@ -1,10 +1,9 @@
-#### JavaScript typically uses `throw`/`try/catch` for error handling. This lesson demonstrates the Go idiom of returning errors as values by returning `{ val, err }` objects and using destructuring. Custom error types extend the built-in `Error` class. Type checking uses `instanceof` in place of Go's type assertion `e.(*argError)`.
+﻿#### JavaScript typically uses `throw`/`try/catch` for error handling. This lesson demonstrates the Go idiom of returning errors as values by returning `{ val, err }` objects and using destructuring. Custom error types extend the built-in `Error` class. Type checking uses `instanceof` in place of Go's type assertion `e.(*argError)`.
 ___
 ##### Run Command:
 
 `$ node errors.js`
 
-`$ npx tsx errors.ts`
 
 ##### Results:
 

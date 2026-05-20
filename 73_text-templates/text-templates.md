@@ -1,10 +1,9 @@
-#### JavaScript has no built-in template engine; this lesson implements a minimal `{{.Key}}`-compatible template function using regex substitution supporting field access, `{{if}}`, and `{{range}}`.
+﻿#### JavaScript has no built-in template engine; this lesson implements a minimal `{{.Key}}`-compatible template function using regex substitution supporting field access, `{{if}}`, and `{{range}}`.
 ___
 ##### Run Command:
 
 `$ node text-templates.js`
 
-`$ npx tsx text-templates.ts`
 
 ##### Results:
 

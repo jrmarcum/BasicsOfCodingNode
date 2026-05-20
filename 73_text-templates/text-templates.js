@@ -1,6 +1,6 @@
-function render(tmpl, data) {
+﻿function render(tmpl, data) {
     if (typeof data !== 'object' || data === null) {
-        const val = Array.isArray(data) ? '[' + data.join(' ') + ']' : String(data);
+        const val = String(data);
         return tmpl
             .replace(/\{\{if \.\}\}([\s\S]*?)\{\{else\}\}([\s\S]*?)\{\{end\}\}/g,
                 (_, t, f) => data ? t : f)
@@ -11,15 +11,18 @@ function render(tmpl, data) {
     if (Array.isArray(data)) {
         return tmpl.replace(/\{\{\.\}\}/g, '[' + data.join(' ') + ']');
     }
+    const obj = data;
     return tmpl
-        .replace(/\{\{\.(\w+)\}\}/g, (_, k) => String(data[k] ?? ''))
+        .replace(/\{\{\.(\w+)\}\}/g, (_, k) => String(obj[k] ?? ''))
         .replace(/\{\{if \.(\w+)\}\}([\s\S]*?)\{\{else\}\}([\s\S]*?)\{\{end\}\}/g,
-            (_, k, t, f) => data[k] ? render(t, data) : render(f, data))
+            (_, k, t, f) => obj[k] ? render(t, obj) : render(f, obj))
         .replace(/\{\{if \.(\w+)\}\}([\s\S]*?)\{\{end\}\}/g,
-            (_, k, body) => data[k] ? render(body, data) : '')
+            (_, k, body) => obj[k] ? render(body, obj) : '')
         .replace(/\{\{range \.(\w+)\}\}([\s\S]*?)\{\{end\}\}/g,
-            (_, k, body) => (data[k] || []).map(item =>
-                typeof item === 'object' ? render(body, item) : body.replace(/\{\{\.\}\}/g, item)
+            (_, k, body) => (obj[k] || []).map((item) =>
+                typeof item === 'object' && item !== null
+                    ? render(body, item)
+                    : body.replace(/\{\{\.\}\}/g, String(item))
             ).join(''));
 }
 

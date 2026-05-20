@@ -1,10 +1,9 @@
-#### JavaScript's built-in `URL` class (WHATWG URL API) is available globally in Node.js v10+. It handles scheme, credentials, host, port, path, query, and fragment. The query parameters are accessed via `URLSearchParams`. Unlike Go's `url.ParseQuery` which returns `map[string][]string`, JavaScript's `URLSearchParams` returns single values by default.
+﻿#### JavaScript's built-in `URL` class (WHATWG URL API) is available globally in Node.js v10+. It handles scheme, credentials, host, port, path, query, and fragment. The query parameters are accessed via `URLSearchParams`. Unlike Go's `url.ParseQuery` which returns `map[string][]string`, JavaScript's `URLSearchParams` returns single values by default.
 ___
 ##### Run Command:
 
 `$ node url-parsing.js`
 
-`$ npx tsx url-parsing.ts`
 
 ##### Results:
 

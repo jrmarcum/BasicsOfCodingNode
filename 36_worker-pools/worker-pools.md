@@ -1,10 +1,9 @@
-#### Go's goroutine worker pool with channels maps to async worker functions sharing a job-index closure; workers run concurrently via `Promise.all` and pull jobs until none remain.
+﻿#### Go's goroutine worker pool with channels maps to async worker functions sharing a job-index closure; workers run concurrently via `Promise.all` and pull jobs until none remain.
 ___
 ##### Run Command:
 
 `$ node worker-pools.js`
 
-`$ npx tsx worker-pools.ts`
 
 ##### Results:
 

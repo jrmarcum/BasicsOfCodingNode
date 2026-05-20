@@ -1,10 +1,9 @@
-#### JavaScript plain objects and the `for...of` loop over `Object.entries()` and `Object.keys()` preserve insertion order, making map iteration deterministic — unlike Go's non-deterministic map range. The final loop iterates over the string `'go'`, printing the Unicode code point of each character (`g`=103, `o`=111).
+﻿#### JavaScript plain objects and the `for...of` loop over `Object.entries()` and `Object.keys()` preserve insertion order, making map iteration deterministic — unlike Go's non-deterministic map range. The final loop iterates over the string `'go'`, printing the Unicode code point of each character (`g`=103, `o`=111).
 ___
 ##### Run Command:
 
 `$ node range.js`
 
-`$ npx tsx range.ts`
 
 ##### Results:
 

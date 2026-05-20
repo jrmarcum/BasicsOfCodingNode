@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node sorting-by-functions.js`
 
-`$ npx tsx sorting-by-functions.ts`
 
 ##### Results:
 

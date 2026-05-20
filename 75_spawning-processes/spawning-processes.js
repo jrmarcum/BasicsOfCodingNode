@@ -1,4 +1,4 @@
-import { spawnSync } from 'node:child_process';
+﻿import { spawnSync } from 'node:child_process';
 
 const versionResult = spawnSync(process.execPath, ['--version'], { encoding: 'utf8' });
 console.log('> bun --version');

@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node for.js`
 
-`$ npx tsx for.ts`
 
 ##### Results:
 

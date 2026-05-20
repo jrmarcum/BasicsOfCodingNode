@@ -1,4 +1,4 @@
-let handled = false;
+﻿let handled = false;
 
 function onSignal(name) {
     if (!handled) {
@@ -14,7 +14,6 @@ process.on('SIGTERM', () => onSignal("terminated"));
 
 console.log("awaiting signal");
 
-// Emit the signal event programmatically for demonstration
 setTimeout(() => {
     process.emit('SIGINT');
 }, 100);

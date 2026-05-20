@@ -1,10 +1,9 @@
-#### Go's `rune` type maps to JavaScript's Unicode code point; `Buffer.from(s).length` gives the byte length, `[...s]` spreads into code-point characters, and `for...of` iterates each rune with `codePointAt(0)` for the numeric value.
+﻿#### Go's `rune` type maps to JavaScript's Unicode code point; `Buffer.from(s).length` gives the byte length, `[...s]` spreads into code-point characters, and `for...of` iterates each rune with `codePointAt(0)` for the numeric value.
 ___
 ##### Run Command:
 
 `$ node strings-and-runes.js`
 
-`$ npx tsx strings-and-runes.ts`
 
 ##### Results:
 

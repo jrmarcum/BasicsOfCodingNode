@@ -1,4 +1,4 @@
-(async () => {
+﻿(async () => {
     const resp = await fetch("https://gobyexample.com");
     console.log("Response status:", resp.status);
 

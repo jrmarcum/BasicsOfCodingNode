@@ -1,10 +1,9 @@
-#### Go's `testing` package maps to Node.js's built-in `node:test` runner; `test()` replaces `func TestX(t *testing.T)`, `describe()` groups subtests, and `assert.strictEqual()` replaces `t.Errorf`. Timing values in the output vary.
+﻿#### Go's `testing` package maps to Node.js's built-in `node:test` runner; `test()` replaces `func TestX(t *testing.T)`, `describe()` groups subtests, and `assert.strictEqual()` replaces `t.Errorf`. Timing values in the output vary.
 ___
 ##### Run Command:
 
 `$ node --test testing-and-benchmarking.js`
 
-`$ npx tsx --test testing-and-benchmarking.ts`
 
 ##### Results:
 

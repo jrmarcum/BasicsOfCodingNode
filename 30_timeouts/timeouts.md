@@ -1,10 +1,9 @@
-#### Go's `select` with `time.After` for timeouts maps to `Promise.race()` competing against a rejecting timeout promise; the first to settle wins.
+﻿#### Go's `select` with `time.After` for timeouts maps to `Promise.race()` competing against a rejecting timeout promise; the first to settle wins.
 ___
 ##### Run Command:
 
 `$ node timeouts.js`
 
-`$ npx tsx timeouts.ts`
 
 ##### Results:
 

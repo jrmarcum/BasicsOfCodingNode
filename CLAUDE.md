@@ -14,8 +14,8 @@ This project contains two tiers of content with different licenses:
 - **CC BY 3.0** — lesson files and code examples adapted from
   "Basics of Coding Go" by Jon Marcum, which was itself adapted from
   "Go by Example" by Mark McGranaghan
-  (https://github.com/mmcgrana/gobyexample).
-  License: http://creativecommons.org/licenses/by/3.0/
+  (<https://github.com/mmcgrana/gobyexample>).
+  License: <http://creativecommons.org/licenses/by/3.0/>
 
 - **CC0 1.0** — original contributions by Jon Marcum (project structure,
   README, comparative-study additions, and any lessons not derived from
@@ -33,30 +33,30 @@ program logic and expected output.
 
 After cloning, initialize the submodule with:
 
-```
+```sh
 git submodule update --init --recursive
 ```
 
 ## Project Structure
 
-```
+```text
 BasicsOfCodingNode/
 ├── CLAUDE.md          — this file; canonical project context for Claude sessions
 ├── LICENSE            — CC0 (applies to Jon Marcum's original contributions)
 ├── NOTICE             — attribution notice for CC BY 3.0 derived content
 ├── README.md          — project overview, attribution section, license table
 ├── package.json       — type: module; devDependencies: tsx, typescript, @types/node
-├── tsconfig.json      — TypeScript compiler config (ESNext module, bundler resolution)
+├── tsconfig.json      — TypeScript compiler config (unused; retained for toolchain)
 ├── upstream/
 │   └── basicsofcodinggo/  — git submodule: BasicsOfCodingGo reference
 └── ##_topic-name/
     ├── topic-name.js  — JavaScript source (run with node)
-    ├── topic-name.ts  — TypeScript source (run with npx tsx)
     └── topic-name.md  — lesson explanation (run commands + expected output)
 ```
 
 Lessons are numbered with a two-digit prefix (e.g., `01_hello-world`),
 mirroring BasicsOfCodingGo exactly: same lesson numbers, same folder names.
+All lessons are JavaScript-only; there are no `.ts` files in the project.
 
 ## .gitignore
 
@@ -81,8 +81,8 @@ node_modules/
 Thumbs.db
 ```
 
-- `dist/` is the TypeScript compiler output directory; use `npx tsx` to run
-  `.ts` files directly without compiling.
+- `dist/` is the TypeScript compiler output directory (relevant only for lessons 24
+  and 26); use `npx tsx` to run those `.ts` files directly without compiling.
 - `tmp/` is the working directory expected by lessons 58 (reading-files),
   59 (writing-files), and 60 (line-filters). It must exist at runtime but
   should not be committed. Lesson 59 creates it automatically.
@@ -91,27 +91,18 @@ Thumbs.db
 
 ## Language Notes for Future Claude Sessions
 
-- **Runtime:** Node.js. Run `npm install` once at project root to install devDependencies.
-  - JavaScript: `node filename.js`
-  - TypeScript: `npx tsx filename.ts` (tsx runs TypeScript natively via esbuild; no compile step)
-- **Module system:** ESM (`import`/`export`) in both `.js` and `.ts` files.
+- **Runtime:** Node.js. Run `node filename.js` for all lessons.
+  - Run `npm install` once at the project root (needed for lesson 49's xml2js package).
+  - All lessons are JavaScript-only; do **not** create `.ts` files.
+- **Module system:** ESM (`import`/`export`) in all `.js` files.
   Use `import x from 'node:x'` for default imports and `import { fn } from 'node:x'`
   for named imports. Always use the `node:` prefix for built-in modules.
   Never use `require()`. ESM works in `.js` because `package.json` has `"type": "module"`.
-- **Toolchain:** `package.json` (root) + `tsconfig.json` required.
-  devDependencies: `tsx`, `typescript`, `@types/node`. Run `npm install` once.
+- **Toolchain:** `package.json` (root). devDependencies (`tsx`, `typescript`,
+  `@types/node`) are present but unused by lessons — `npm install` is only needed
+  for lesson 49's xml2js package. Run `npm install` once at the project root.
 - **Node.js with ESM** — all `import` statements, `process.*` globals,
-  `fs`/`path`/`crypto`/`readline` modules, and all lesson logic are standard
-  Node.js. `tsx` is used for TypeScript; it is a drop-in replacement for `node`
-  that handles TypeScript natively.
-- **TypeScript conventions used:**
-  - Function parameter and return types always explicit
-  - `interface` for object shapes (structs, result objects)
-  - Tuple return types `[T, U]` for multiple-return-value lessons
-  - `Array<() => void>` for typed function arrays (lesson 43)
-  - `unknown` for truly-unknown-type parameters (lesson 07 `whatAmI`)
-  - `implements InterfaceName` on classes (lesson 20)
-  - `import xml2js from 'xml2js'` for the untyped xml2js package (lesson 49)
+  `fs`/`path`/`crypto`/`readline` modules, and all lesson logic are standard Node.js.
 - **External packages:** lesson 49 (xml) requires `npm install xml2js` run inside
   `49_xml/`. All other lessons use only Node.js built-ins.
 - **JavaScript has no pointers** (lesson 17) — implement with object references;
@@ -121,6 +112,10 @@ Thumbs.db
 - **JavaScript has no panic/recover** (lesson 42) — implement with `throw`/`try/catch`.
 - **JavaScript has no explicit interfaces** (lesson 20) — implement with duck typing.
 - **JavaScript has no structs** (lesson 18) — implement with classes or plain objects.
+- **JavaScript has no native enum syntax** (lesson 24) — use `Object.freeze({...})`
+  with manual integer values; TypeScript's `enum` keyword compiles to equivalent code.
+- **JavaScript has no generic type syntax** (lesson 26) — dynamic typing makes all
+  functions and classes implicitly generic; no annotation is required or possible.
 - **Go's `fmt.Println` vs `console.log`:** Go uses space-separated `%v` format for
   structs/arrays (e.g., `[1 2 3]`, `map[k:v]`). Node.js uses its own inspection
   format (e.g., `[ 1, 2, 3 ]`, `{ k: 'v' }`). Always show actual Node.js output
@@ -140,14 +135,12 @@ Thumbs.db
 
 Each lesson `.md` follows the Go/V reference format:
 
-```
+```text
 #### Optional description (language note or setup instruction).
 ___
 ##### Run Command:
 
 `$ node filename.js`
-
-`$ npx tsx filename.ts`
 
 ##### Results:
 
@@ -156,6 +149,7 @@ ___
 ```
 
 Rules:
+
 - The description line (if present) is a single `####` sentence before the first `___`.
 - No opening `___` before a description; `___` separates description from run command.
 - If there is no description, the file starts directly with `##### Run Command:`.

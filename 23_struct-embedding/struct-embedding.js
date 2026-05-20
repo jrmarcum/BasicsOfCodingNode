@@ -1,4 +1,4 @@
-class Base {
+﻿class Base {
     constructor(num) {
         this.num = num;
     }
@@ -27,4 +27,6 @@ const co = new Container(1, "some name");
 console.log(`co={num: ${co.num}, str: ${co.str}}`);
 console.log("also num:", co.base.num);
 console.log("describe:", co.describe());
-console.log("describer:", co.describe());
+
+const d = co;
+console.log("describer:", d.describe());

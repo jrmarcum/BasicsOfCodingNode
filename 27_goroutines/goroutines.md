@@ -1,10 +1,9 @@
-#### JavaScript is single-threaded, so goroutines are simulated with `setTimeout(fn, 0)` to defer work to the next event-loop iteration; output order is deterministic (deferred tasks run after all synchronous code completes).
+﻿#### JavaScript is single-threaded, so goroutines are simulated with `setTimeout(fn, 0)` to defer work to the next event-loop iteration; output order is deterministic (deferred tasks run after all synchronous code completes).
 ___
 ##### Run Command:
 
 `$ node goroutines.js`
 
-`$ npx tsx goroutines.ts`
 
 ##### Results:
 

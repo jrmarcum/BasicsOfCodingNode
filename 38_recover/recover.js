@@ -1,4 +1,4 @@
-function mayPanic() {
+﻿function mayPanic() {
     throw new Error("a problem");
 }
 

@@ -1,10 +1,9 @@
-#### JavaScript is single-threaded so `++` on a counter is inherently safe; this lesson demonstrates the Go mutex pattern using a `Container` class and `Promise.all` to simulate concurrent goroutines.
+﻿#### JavaScript is single-threaded so `++` on a counter is inherently safe; this lesson demonstrates the Go mutex pattern using a `Container` class and `Promise.all` to simulate concurrent goroutines.
 ___
 ##### Run Command:
 
 `$ node mutexes.js`
 
-`$ npx tsx mutexes.ts`
 
 ##### Results:
 

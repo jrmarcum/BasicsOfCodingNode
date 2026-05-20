@@ -1,10 +1,9 @@
-#### The first three lines of output (using `Math.random()`) will vary with each run. The last two lines use a seeded PRNG (mulberry32 with seed 42) and will always produce the same values, demonstrating that the same seed yields the same sequence. JavaScript's `Math.random()` cannot be seeded — a custom PRNG is required for reproducible random numbers.
+﻿#### The first three lines of output (using `Math.random()`) will vary with each run. The last two lines use a seeded PRNG (mulberry32 with seed 42) and will always produce the same values, demonstrating that the same seed yields the same sequence. JavaScript's `Math.random()` cannot be seeded — a custom PRNG is required for reproducible random numbers.
 ___
 ##### Run Command:
 
 `$ node random-numbers.js`
 
-`$ npx tsx random-numbers.ts`
 
 ##### Results:
 

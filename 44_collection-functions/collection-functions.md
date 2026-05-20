@@ -1,10 +1,9 @@
-#### JavaScript's Array prototype includes `indexOf`, `includes`, `some`, `every`, `filter`, and `map` as built-in methods — no helper functions are needed. In Go, these must be implemented manually (or use the `slices` package in Go 1.21+).
+﻿#### JavaScript's Array prototype includes `indexOf`, `includes`, `some`, `every`, `filter`, and `map` as built-in methods — no helper functions are needed. In Go, these must be implemented manually (or use the `slices` package in Go 1.21+).
 ___
 ##### Run Command:
 
 `$ node collection-functions.js`
 
-`$ npx tsx collection-functions.ts`
 
 ##### Results:
 

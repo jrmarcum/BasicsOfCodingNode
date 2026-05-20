@@ -1,4 +1,4 @@
-function slowOperation(signal) {
+﻿function slowOperation(signal) {
     return new Promise((resolve, reject) => {
         const timer = setTimeout(() => resolve("hello\n"), 10000);
         signal.addEventListener('abort', () => {

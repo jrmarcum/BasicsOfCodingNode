@@ -1,4 +1,4 @@
-const ServerState = Object.freeze({
+﻿const ServerState = Object.freeze({
     StateIdle: 0,
     StateConnected: 1,
     StateError: 2,

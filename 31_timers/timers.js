@@ -1,4 +1,5 @@
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+﻿const sleep = (ms) =>
+    new Promise(resolve => setTimeout(resolve, ms));
 
 (async () => {
     await sleep(50);
@@ -14,4 +15,5 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
     console.log("Timer 2 stopped");
 
     await sleep(100);
+    void timer2Fired;
 })();

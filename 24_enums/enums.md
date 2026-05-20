@@ -1,10 +1,8 @@
-#### Go's `iota`-based enums are represented in JavaScript with `Object.freeze({...})` constants; TypeScript uses the `enum` keyword for the same pattern.
+#### Go's `iota`-based enums map to JavaScript's `Object.freeze({...})` pattern with manual integer values; TypeScript offers an `enum` keyword that compiles to equivalent code, but plain JavaScript achieves the same result with `Object.freeze`.
 ___
 ##### Run Command:
 
 `$ node enums.js`
-
-`$ npx tsx enums.ts`
 
 ##### Results:
 

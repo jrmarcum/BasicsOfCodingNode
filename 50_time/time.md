@@ -1,10 +1,9 @@
-#### Dates and times will vary with each run. The first line reflects the current time when the program runs. JavaScript uses the `Date` object rather than Go's `time.Time`. Go's `time.Duration` type (hours, minutes, seconds, nanoseconds) is replicated using arithmetic on millisecond timestamps.
+﻿#### Dates and times will vary with each run. The first line reflects the current time when the program runs. JavaScript uses the `Date` object rather than Go's `time.Time`. Go's `time.Duration` type (hours, minutes, seconds, nanoseconds) is replicated using arithmetic on millisecond timestamps.
 ___
 ##### Run Command:
 
 `$ node time.js`
 
-`$ npx tsx time.ts`
 
 ##### Results:
 

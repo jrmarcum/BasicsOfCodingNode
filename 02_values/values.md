@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node values.js`
 
-`$ npx tsx values.ts`
 
 ##### Results:
 

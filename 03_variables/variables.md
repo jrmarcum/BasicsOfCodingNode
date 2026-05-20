@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node variables.js`
 
-`$ npx tsx variables.ts`
 
 ##### Results:
 

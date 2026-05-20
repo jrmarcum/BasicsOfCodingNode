@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node closures.js`
 
-`$ npx tsx closures.ts`
 
 ##### Results:
 

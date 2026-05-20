@@ -1,10 +1,9 @@
-#### Go's `net/http` server maps to Node.js `http.createServer`; this self-contained example starts a server, makes requests to `/hello` and `/headers`, prints the responses, then closes.
+﻿#### Go's `net/http` server maps to Node.js `http.createServer`; this self-contained example starts a server, makes requests to `/hello` and `/headers`, prints the responses, then closes.
 ___
 ##### Run Command:
 
 `$ node http-server.js`
 
-`$ npx tsx http-server.ts`
 
 ##### Results:
 

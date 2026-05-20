@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node recursion.js`
 
-`$ npx tsx recursion.ts`
 
 ##### Results:
 

@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node variadic-functions.js`
 
-`$ npx tsx variadic-functions.ts`
 
 ##### Results:
 

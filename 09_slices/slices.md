@@ -1,10 +1,9 @@
-#### JavaScript arrays are dynamic by default — there is no separate "slice" type as in Go. The spread operator (`...`) is used for copying, and `Array.prototype.slice()` provides sub-array views (returning new arrays, not memory-sharing slices as in Go).
+﻿#### JavaScript arrays are dynamic by default — there is no separate "slice" type as in Go. The spread operator (`...`) is used for copying, and `Array.prototype.slice()` provides sub-array views (returning new arrays, not memory-sharing slices as in Go).
 ___
 ##### Run Command:
 
 `$ node slices.js`
 
-`$ npx tsx slices.ts`
 
 ##### Results:
 

@@ -1,8 +1,7 @@
-##### Run Command:
+﻿##### Run Command:
 
 `$ node string-functions.js`
 
-`$ npx tsx string-functions.ts`
 
 ##### Results:
 

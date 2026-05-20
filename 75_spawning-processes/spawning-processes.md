@@ -1,10 +1,9 @@
-#### Go's `exec.Command` maps to `child_process.spawnSync`; error handling uses `result.error.code` for spawn failures and `result.status` for non-zero exit codes.
+﻿#### Go's `exec.Command` maps to `child_process.spawnSync`; error handling uses `result.error.code` for spawn failures and `result.status` for non-zero exit codes.
 ___
 ##### Run Command:
 
 `$ node spawning-processes.js`
 
-`$ npx tsx spawning-processes.ts`
 
 ##### Results:
 

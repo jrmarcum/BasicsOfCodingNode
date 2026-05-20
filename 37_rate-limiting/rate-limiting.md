@@ -1,10 +1,9 @@
-#### Go's channel-ticker rate limiter maps to a `sleep`-based throttle and a token-bucket burst pattern; request timestamps vary with each run.
+﻿#### Go's channel-ticker rate limiter maps to a `sleep`-based throttle and a token-bucket burst pattern; request timestamps vary with each run.
 ___
 ##### Run Command:
 
 `$ node rate-limiting.js`
 
-`$ npx tsx rate-limiting.ts`
 
 ##### Results:
 

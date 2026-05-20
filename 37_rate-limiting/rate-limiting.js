@@ -1,4 +1,5 @@
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+﻿const sleep = (ms) =>
+    new Promise(resolve => setTimeout(resolve, ms));
 
 (async () => {
     const requests = [1, 2, 3, 4, 5];

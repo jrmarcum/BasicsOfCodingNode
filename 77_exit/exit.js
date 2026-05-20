@@ -1,4 +1,4 @@
-process.on('beforeExit', () => {
+﻿process.on('beforeExit', () => {
     console.log("!");
 });
 

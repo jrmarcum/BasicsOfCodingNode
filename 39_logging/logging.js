@@ -1,4 +1,4 @@
-function newLogger(prefix, stream) {
+﻿function newLogger(prefix, stream) {
     let pfx = prefix;
     return {
         println(msg) {
@@ -23,12 +23,16 @@ mylog.setPrefix("ohmy:");
 mylog.println("from mylog");
 
 let buf = "";
-const buflog = newLogger("buf:", { write: s => { buf += s; } });
+const buflog = newLogger("buf:", { write: (s) => { buf += s; } });
 buflog.println("hello");
 process.stdout.write("from buflog:" + buf);
 
 function slogInfo(msg, ...pairs) {
-    const obj = { time: new Date().toISOString(), level: "INFO", msg };
+    const obj = {
+        time: new Date().toISOString(),
+        level: "INFO",
+        msg,
+    };
     for (let i = 0; i < pairs.length; i += 2) {
         obj[String(pairs[i])] = pairs[i + 1];
     }

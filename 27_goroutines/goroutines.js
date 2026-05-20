@@ -1,4 +1,4 @@
-function f(from) {
+﻿function f(from) {
     for (let i = 0; i < 3; i++) {
         console.log(from, ":", i);
     }

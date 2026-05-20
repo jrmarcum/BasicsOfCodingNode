@@ -1,4 +1,4 @@
-import net from 'node:net';
+﻿import net from 'node:net';
 
 const server = net.createServer((conn) => {
     let buf = '';

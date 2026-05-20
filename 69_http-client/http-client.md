@@ -1,10 +1,9 @@
-#### Go's `http.Get` maps to the global `fetch` built into Bun; this example requires internet access and the response body will vary.
+﻿#### Go's `http.Get` maps to the global `fetch` built into Bun; this example requires internet access and the response body will vary.
 ___
 ##### Run Command:
 
 `$ node http-client.js`
 
-`$ npx tsx http-client.ts`
 
 ##### Results:
 

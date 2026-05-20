@@ -1,10 +1,9 @@
-#### Go's `time.NewTicker` maps to `setInterval`; `ticker.Stop()` maps to `clearInterval`. Tick timestamps vary with each run.
+﻿#### Go's `time.NewTicker` maps to `setInterval`; `ticker.Stop()` maps to `clearInterval`. Tick timestamps vary with each run.
 ___
 ##### Run Command:
 
 `$ node tickers.js`
 
-`$ npx tsx tickers.ts`
 
 ##### Results:
 
